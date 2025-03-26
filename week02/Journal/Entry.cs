@@ -1,6 +1,5 @@
 using System;
 
-
 public class Entry
 {
     public string _date;
@@ -9,6 +8,10 @@ public class Entry
 
     public void Display()
     {
+        DateTime theCurrentTime = DateTime.Now;
+        string DateText = theCurrentTime.ToShortDateString();
+        string _date = DateText;
+
         Console.Write($"{_date} {_promptText}");
         Console.Write($"{_entryText}");
     }

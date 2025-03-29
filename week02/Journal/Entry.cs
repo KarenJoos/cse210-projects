@@ -1,4 +1,5 @@
 using System;
+using System.IO;
 
 public class Entry
 {
@@ -12,7 +13,10 @@ public class Entry
         string DateText = theCurrentTime.ToShortDateString();
         string _date = DateText;
 
-        Console.Write($"{_date} {_promptText}");
+        _promptText = PromptGenerator.returnPrompt;
+    
+
+        Console.Write($"{_date} - {_promptText}");
         Console.Write($"{_entryText}");
     }
 }

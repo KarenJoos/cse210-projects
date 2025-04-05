@@ -6,10 +6,10 @@ public class Word
     private string _text;
     private bool _isHidden;
 
-    public string Word(string text)
-    {
-        _text = Scripture.GetDisplayText.count();
-    }
+    // public string Word(string text)
+    // {
+    //     _text = Scripture.GetDisplayText.count();
+    // }
 
     public void Hide()
     {

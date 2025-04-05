@@ -12,12 +12,12 @@ public class Word
 
     public void Show()
     {
-
+        _text = 
     }
 
     public bool IsHidden()
     {
-
+        _isHidden = 
     }
 
     public string GetDisplayText()

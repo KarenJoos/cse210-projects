@@ -1,9 +1,19 @@
-public class WritingAssignment
+using System;
+using System.IO;
+public class WritingAssignment : Assignment
 {
     private string _title;
 
-    public void GetWritingInformation()
+    public WritingAssignment(string studentName, string topic, string title)
+        : base(studentName, topic)
     {
-        
+        _title = title;
+    }
+
+    public string GetWritingInformation()
+    {
+        string studentName = GetStudentName();
+
+        return $"{_title} by {studentName}";
     }
 }

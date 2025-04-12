@@ -31,18 +31,16 @@ public class Video
         double length = _length;
         return length;
     }
-    public void SaveInListOfComments(Comment textofcomment)
+    public void SaveInListOfComments(Comment comment)
+    {
+        _comments.Add(comment);
+    }
+    public int GetNumberOfComments()
     {
 
     }
-    // public int GetNumberOfComments()
-    // {
+    public string DisplayListOfComments()
+    {
 
-    // }
-    // public string DisplayListOfComments()
-    // {
-        // string _comments = comments;
-        // _comments.GetDisplayComment();
-        // return display;
-    // }
+    }
 }

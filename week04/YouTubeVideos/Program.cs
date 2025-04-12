@@ -13,5 +13,6 @@ class Program
         Console.WriteLine(c1.GetDisplayComment());
 
         Comment c2 = new Comment("George", "Nice");
+
     }
 }

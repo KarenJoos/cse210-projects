@@ -5,17 +5,17 @@ public class Comment
 {
     public string _name;
 
-    public string _textofcomment;
+    public string _comment;
 
     public Comment(string name, string comment)
     {
         _name = name;
-        _textofcomment = comment;
+        _comment = comment;
     }
 
     public string GetDisplayComment()
     {
-        string display = _name + _textofcomment;
+        string display = _name + _comment;
         return display;
     }
 }

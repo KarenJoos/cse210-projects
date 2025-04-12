@@ -17,9 +17,15 @@ public class Order
         _shippingLabel = shippingLabel;
     }
 
-    public string GetProducts()
+    // public string GetOrder()
+    // {
+    //     // List<Products> = new <Products>();
+
+    //     products = _products.GetProducts();
+    // }
+
+    public string GetShippingLabel()
     {
-        List<Products> = new <Products>();
-        _products = Products.Add();
+        
     }
 }

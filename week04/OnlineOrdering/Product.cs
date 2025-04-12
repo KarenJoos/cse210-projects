@@ -2,6 +2,7 @@ using System;
 
 public class Products
 {
+    private List<string, int, double, int> _products;
     private string _pName;
     private int _productID;
     private double _price;
@@ -15,15 +16,16 @@ public class Products
         _quantity = quantity;
     }
 
-    public double GetTotalCost()
+        public void GetTotalCost()
     {
-        double total = _price * _quantity;
-        return total;
+        _price = _price * _quantity;
     }
 
-    public void GetProducts()
+    public string GetProducts()
     {
-        Console.Write(_pName + _productID);
-        return;
+        _products.Add(new List<string> { _pName,  _productID,  _price,  _quantity });
+        // string items = _pName + _productID;
+        // return items;
     }
+
 }

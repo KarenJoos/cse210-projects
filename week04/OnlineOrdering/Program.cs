@@ -9,10 +9,11 @@ class Program
         Customer c1 = new Customer("Karen Joos", a1);
         Console.WriteLine(c1.GetCustomerInformation());
 
-        // Products p1 = new Products("milk", 12345, 2.99, 2);
-        // Console.WriteLine(p1.GetProducts());
-        // Console.WriteLine(p1.GetTotalCost());
+        Products p1 = new Products("milk", 12345, 2.99, 2);
+        p1.GetTotalCost();
+        Console.WriteLine(p1.GetProducts());
 
-
+        // Order o1 = new Order(p1)
+        // Order o1 = new Order(p2)
     }
 }

@@ -11,9 +11,10 @@ public class Customer
         _address = address;
     }
 
-    public void GetCustomerInformation()
+    public string GetCustomerInformation()
     {
-        Console.WriteLine($"{_name}\n{_address}");
+        string info = _name + _address;
+        return info;
     }
 
     public void GetCountry(Address address)

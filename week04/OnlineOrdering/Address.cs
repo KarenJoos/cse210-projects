@@ -20,12 +20,12 @@ public class Address
         int shipping;
         if (_country == "USA")
         {
-            shipping = 35;
+            shipping = 5;
             Console.WriteLine(shipping);
         }
         else
         {
-            shipping = 70;
+            shipping = 35;
             Console.WriteLine(shipping);
         }
         return shipping;

@@ -2,7 +2,7 @@ using System;
 
 public class Products
 {
-    private List<string, int, double, int> _products;
+    // private List<string, int, double, int> _products;
     private string _pName;
     private int _productID;
     private double _price;
@@ -16,16 +16,16 @@ public class Products
         _quantity = quantity;
     }
 
-        public void GetTotalCost()
+    public double GetTotalCost()
     {
-        _price = _price * _quantity;
+        double price = _price * _quantity;
+        return price;
     }
 
-    public string GetProducts()
+    public string GetPackingLabel()
     {
-        _products.Add(new List<string> { _pName,  _productID,  _price,  _quantity });
-        // string items = _pName + _productID;
-        // return items;
+        string items = _pName + _productID + _price + _quantity; 
+        return items;
     }
 
 }

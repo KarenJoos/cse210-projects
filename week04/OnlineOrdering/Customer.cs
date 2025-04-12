@@ -17,8 +17,9 @@ public class Customer
         return info;
     }
 
-    public void GetCountry(Address address)
+    public int GetCountry()
     {
-        int country = _address.GetCountry();
+        int country = _address.GetShipping();
+        return country;
     }
 }

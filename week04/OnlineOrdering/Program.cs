@@ -11,9 +11,8 @@ class Program
 
         Products p1 = new Products("milk", 12345, 2.99, 2);
         p1.GetTotalCost();
-        Console.WriteLine(p1.GetProducts());
+        // Console.WriteLine(p1.GetProducts());
 
-        // Order o1 = new Order(p1)
-        // Order o1 = new Order(p2)
+        Order o1 = new Order(p1, p1, c1);
     }
 }

@@ -15,7 +15,7 @@ public class Address
         _country = country;
     }
 
-    public int GetCountry()
+    public int GetShipping()
     {
         int shipping;
         if (_country == "USA")

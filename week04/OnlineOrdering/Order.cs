@@ -17,15 +17,27 @@ public class Order
         _shippingLabel = shippingLabel;
     }
 
-    // public string GetOrder()
-    // {
-    //     // List<Products> = new <Products>();
+    public void GetOrder()
+    {
+        // Products p1 = 
+        // string _products = _products.GetPackingLabel();
+    }
 
-    //     products = _products.GetProducts();
-    // }
+    public void GetTotalPrice()
+    {
+        // double totalPrice = _totalCost + _totalCost;
+        // return totalPrice;
+
+    }
+    public void GetPackingLabel()
+    {
+        // string packingLabel = _products.GetProducts();
+        // return packingLabel;
+    }
 
     public string GetShippingLabel()
     {
-        
+        string shippingLabel = _shippingLabel.GetCustomerInformation();
+        return shippingLabel;
     }
 }

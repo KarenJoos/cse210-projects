@@ -13,12 +13,12 @@ public class Customer
 
     public string GetCustomerInformation()
     {
-        string info = _name + _address;
+        string info = _name +"\n" + _address.GetAddress();
         return info;
     }
 
     public void GetCountry(Address address)
     {
-        int country = address.GetCountry();
+        int country = _address.GetCountry();
     }
 }

@@ -1,4 +1,6 @@
 using System;
+using System.Numerics;
+using System.Reflection.Emit;
 using System.Reflection.Metadata.Ecma335;
 
 public class Order
@@ -8,12 +10,16 @@ public class Order
     private Products _packingLabel;
     private Customer _shippingLabel;
 
-    public Order
+    public Order(Products totalCost, Products packingLabel, Customer shippingLabel)
     {
-        // List<Products> _products = new Products();
+        _totalCost = totalCost;
+        _packingLabel = packingLabel;
+        _shippingLabel = shippingLabel;
+    }
 
-        _totalCost = 
-
-
+    public string GetProducts()
+    {
+        List<Products> = new <Products>();
+        _products = Products.Add();
     }
 }

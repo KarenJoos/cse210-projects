@@ -37,10 +37,10 @@ public class Video
     }
     public int GetNumberOfComments()
     {
-
+        return _comments.Count();
     }
     public string DisplayListOfComments()
     {
-
+        return _comments;
     }
 }

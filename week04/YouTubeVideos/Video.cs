@@ -41,6 +41,6 @@ public class Video
     }
     public string DisplayListOfComments()
     {
-        return _comments;
+        return string.Format(_comments.);
     }
 }

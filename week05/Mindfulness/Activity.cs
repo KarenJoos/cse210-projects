@@ -36,7 +36,12 @@ public class Activity
 
     public void ShowSpinner(int seconds)
     {
-        Console.Write("");
+        Console.Write("+");
+
+        Thread.Sleep(5000);
+
+        Console.Write("\b \b");
+        Console.Write
     }
 
     public void ShowCountDown(int seconds)
@@ -44,5 +49,5 @@ public class Activity
 
     }
 
-    public 
+    public
 }

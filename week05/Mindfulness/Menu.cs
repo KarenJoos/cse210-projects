@@ -11,7 +11,6 @@ public class Menu
 
     public string UserSelection()
     {
-
         Console.WriteLine("Menu Options:");
         Console.WriteLine("1. Beathing Activity");
         Console.WriteLine("2. Reflection Activity");
@@ -21,7 +20,7 @@ public class Menu
 
         _userInput = Console.ReadLine();
 
-        return _userInput;
+        return GetUserInput();
     }
 
     public string MenuActivities()

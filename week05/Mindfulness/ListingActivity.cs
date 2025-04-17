@@ -16,7 +16,7 @@ public class ListingActivity : Activity
 
     public ListingActivity(string name, string description, int duration) : base(name, description, duration)
     {
-
+        
     }
 
     public void Run()
@@ -56,8 +56,8 @@ public class ListingActivity : Activity
         Console.WriteLine($"\n--- Prompt ---\n{prompt}\n");
     }
 
-    public List<string> GetListFromUser()
-    {
+    // public List<string> GetListFromUser()
+    // {
         
-    }
+    // }
 }

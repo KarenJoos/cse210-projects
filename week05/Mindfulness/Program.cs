@@ -4,7 +4,13 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello World! This is the Mindfulness Project.");
+
+        Menu m1 = new Menu();
+        Console.WriteLine(m1.UserSelection());
+
+        
+
+
     }
 }
 

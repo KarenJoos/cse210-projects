@@ -18,7 +18,7 @@ public abstract class Activity
         return _date;
     }
 
-    public abstract void GetDistance(double length);
+    public abstract void GetDistance();
 
     public abstract void GetSpeed();
 

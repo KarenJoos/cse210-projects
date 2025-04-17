@@ -22,14 +22,14 @@ public class SimpleGoal : Goal
     }
     public override bool IsComplete()
     {
-        bool yes = true;
         bool no = false;
         Console.WriteLine($"[ ] ");
         Console.WriteLine(no);
+        
     }
 
     public override string GetStringRepresentation()
     {
-
+        
     }
 }

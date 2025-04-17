@@ -47,20 +47,33 @@ public class GoalManager
             Console.WriteLine("3. Checklist Goal");
             Console.Write("What type of goal would you like to create? ");
 
-            // _goalType = Console.ReadLine();
+            _goalType = Console.ReadLine();
 
-            // return _goalType;
+            if (_goalType == "1")
+            {
+                RecordEvent();
+            }
 
-            // SimpleGoal simpleGoal = new SimpleGoal("Simple Goals", "", 0);
-            // simpleGoal.Run();
-            // return "Simple Goals";
+            else if (_goalType == "2")
+            {
+                RecordEvent();
+            }
+
+            else if (_goalType == "3")
+            {
+                RecordEvent();
+            }
+
+            else
+            {
+                Console.WriteLine("That was an incorrect input. Please try again.");
+            }
+
         }
 
         else if (_userInput == "2")
         {
-            // ListGoal listGoal = new ListGoal("List Goals", "", 0);
-            // listGoal.Run();
-            // return "List Goals";
+
         }
 
         else if (_userInput == "3")
@@ -87,13 +100,13 @@ public class GoalManager
         else if (_userInput == "6")
         {
             Console.WriteLine("Exiting the program. Thanks for participating!");
-            return;
-            
+            return "Exit";
+
         }
 
         else
         {
-            Console.WriteLine("Invalid selection. Please try again.");
+            return "Invalid selection. Please try again.";
         }
 
     }

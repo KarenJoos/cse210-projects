@@ -13,10 +13,12 @@ public abstract class Activity
 
     public string GetDate()
     {
-        
+        DateTime currentTime = DateTime.Now;
+        _date = currentTime.ToString();
+        return _date;
     }
 
-    public abstract void GetDistance();
+    public abstract void GetDistance(double length);
 
     public abstract void GetSpeed();
 
